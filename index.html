@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>generate GIF image with gif.js</title>
+  </head>
+  <body>
+    <label>delay: <input id="js-delay" type="number" value="1" min="0">ms</label>
+
+    <br>
+
+    <input id="js-generate" type="button" value="generate GIF image" disabled>
+    <input id="js-abort" type="button" value="abort">
+
+    <br>
+
+    <span id="js-state">ready</span>
+
+    <div>
+      <img id="js-gif-image" src="">
+    </div>
+
+    <script src="es6-promise.auto.min.js"></script>
+    <script src="gif.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
